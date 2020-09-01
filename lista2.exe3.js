@@ -46,7 +46,7 @@ function calcularMedia(vet){
             qtde++      
         }
     }
-    console.log(`A média da idade é ${soma/vet.lenght}`)
+    console.log(`A média da idade é ${soma/qtde}`)
 }
 function calcularMaiorIdade(vet){
     let maiorIdade = vet[0].idade
@@ -55,11 +55,25 @@ function calcularMaiorIdade(vet){
             maiorIdade = vet[i].idade // atualiza maior idade
         }
     }
-    console.log(`Entrou na função calcular maior idade`)
+    console.log(`A maior idade é de ${maiorIdade}`)
 }
 function calcularQtde(vet){
-    console.log(`Entrou na função calcular qtde`)
+    let qtde = 0
+    for(let i=0;i<vet.lenght;i++){
+        if (((vet[i].sexo == "F") && (vet[i].idade >= 20) && (vet[i].idade <= 45))
+            ((vet[i].olhos == "A") && (vet[i].altura))){
+         qtde++   
+        }
+        
+    }
+    console.log(`A qtde é de ${qtde}`)
 }
 function calcularPercentual(vet){
-    console.log(`Entrou na função calcular percentual`)
+    let conta = 0
+    for(let i=1; i < vet.lenght; i++){
+        if (vet[i].sexo == "M"){
+            conta++ // atualiza maior
+        }
+    }
+    console.log(`O percentual de homens é ${(conta/vet.lenght)*100}`)
 }
