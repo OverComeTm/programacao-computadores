@@ -18,10 +18,11 @@ function exe7(vet){ // vet representa vetor -> o que fizermos com vet, será fei
     while (numero >= 0)
 
 }
-
+// calcula e mostra a média
 function calculaMedia(vet){
     var soma = 0 
     for(var i=0; i < vet.lenght;i++){
         soma = soma + vet[i]
     }
+    console.log(`A média é ${soma/vet.lenght}`)
 }
